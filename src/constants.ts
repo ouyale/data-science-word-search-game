@@ -1,0 +1,122 @@
+export const TOPICS = {
+  DATA_SCIENCE: 'data science',
+  DATA_ANALYSIS: 'data analysis',
+  MACHINE_LEARNING: 'machine learning',
+  AI: 'artificial intelligence',
+  DATA_ENGINEERING: 'data engineering'
+} as const;
+
+export type Topic = keyof typeof TOPICS;
+
+export const WORD_LISTS: Record<Topic, string[]> = {
+  DATA_SCIENCE: [
+    'ALGORITHM',
+    'DATASET',
+    'REGRESSION',
+    'VISUALIZATION',
+    'MACHINE',
+    'FEATURE',
+    'HYPOTHESIS',
+    'OUTLIER',
+    'CLUSTERING',
+    'PYTHON'
+  ],
+  DATA_ANALYSIS: [
+    'ANALYTICS',
+    'STATISTICS',
+    'DASHBOARD',
+    'EXCEL',
+    'QUERY',
+    'REPORT',
+    'INSIGHT',
+    'METRIC',
+    'TREND',
+    'CHART'
+  ],
+  MACHINE_LEARNING: [
+    'MODEL',
+    'TRAINING',
+    'NEURAL',
+    'ACCURACY',
+    'BIAS',
+    'PREDICT',
+    'CLASSIFY',
+    'TENSOR',
+    'GRADIENT',
+    'BATCH'
+  ],
+  AI: [
+    'ARTIFICIAL',
+    'INTELLIGENCE',
+    'DEEP',
+    'LEARNING',
+    'COGNITIVE',
+    'NEURAL',
+    'NETWORK',
+    'ROBOT',
+    'VISION',
+    'NLP'
+  ],
+  DATA_ENGINEERING: [
+    'PIPELINE',
+    'ETL',
+    'DATABASE',
+    'WAREHOUSE',
+    'SCHEMA',
+    'QUERY',
+    'STORAGE',
+    'STREAM',
+    'BATCH',
+    'API'
+  ]
+};
+
+export const WORD_DEFINITIONS: Record<string, string> = {
+  'ALGORITHM': 'A step-by-step procedure for solving a problem or accomplishing a task',
+  'DATASET': 'A collection of related data points or observations',
+  'REGRESSION': 'Statistical method for analyzing relationships between variables',
+  'VISUALIZATION': 'Graphical representation of data or information',
+  'MACHINE': 'Computing device or system that processes data',
+  'FEATURE': 'Individual measurable property of a phenomenon being observed',
+  'HYPOTHESIS': 'Proposed explanation for a phenomenon',
+  'OUTLIER': 'Data point that differs significantly from other observations',
+  'CLUSTERING': 'Grouping similar data points together',
+  'PYTHON': 'Popular programming language for data science',
+  'ANALYTICS': 'Systematic analysis of data or statistics',
+  'STATISTICS': 'Mathematical study of data collection and analysis',
+  'DASHBOARD': 'Visual display of key information and metrics',
+  'EXCEL': 'Spreadsheet software for data analysis',
+  'QUERY': 'Request for specific information from a database',
+  'REPORT': 'Document presenting analyzed data and findings',
+  'INSIGHT': 'Deep understanding gained from data analysis',
+  'METRIC': 'Standard of measurement or evaluation',
+  'TREND': 'General direction in which something is developing',
+  'CHART': 'Graphical representation of data',
+  'MODEL': 'Mathematical representation of a system or process',
+  'TRAINING': 'Process of teaching a machine learning model',
+  'NEURAL': 'Relating to neural networks or brain-inspired computing',
+  'ACCURACY': 'Degree of correctness in predictions or measurements',
+  'BIAS': 'Systematic error or deviation in results',
+  'PREDICT': 'Estimate future values or outcomes',
+  'CLASSIFY': 'Categorize data into predefined classes',
+  'TENSOR': 'Mathematical object for representing multidimensional data',
+  'GRADIENT': 'Rate of change used in optimization',
+  'BATCH': 'Group of data processed together',
+  'ARTIFICIAL': 'Made or produced by humans rather than occurring naturally',
+  'INTELLIGENCE': 'Ability to acquire and apply knowledge',
+  'DEEP': 'Multiple layers in neural networks',
+  'LEARNING': 'Acquisition of knowledge or skills',
+  'COGNITIVE': 'Related to mental processes and understanding',
+  'NETWORK': 'Interconnected system of nodes',
+  'ROBOT': 'Programmable machine that can carry out tasks',
+  'VISION': 'Computer ability to understand visual information',
+  'NLP': 'Natural Language Processing',
+  'PIPELINE': 'Series of data processing elements connected in sequence',
+  'ETL': 'Extract, Transform, Load process',
+  'DATABASE': 'Organized collection of structured data',
+  'WAREHOUSE': 'System for storing and managing large amounts of data',
+  'SCHEMA': 'Structure or organization of a database',
+  'STORAGE': 'Repository for storing digital data',
+  'STREAM': 'Continuous flow of data',
+  'API': 'Application Programming Interface'
+};
